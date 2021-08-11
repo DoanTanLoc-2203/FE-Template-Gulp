@@ -1,0 +1,177 @@
+body {
+  width: 100vw;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container {
+  width: 900px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.inputtext {
+  display: flex;
+  padding-left: 106px;
+  position: relative;
+  margin-bottom: 24px;
+}
+.inputtext span {
+  left: 440px;
+  color: red;
+  position: absolute;
+  margin-left: 20px;
+  display: none;
+}
+.inputtext i {
+  position: absolute;
+  left: 430px;
+}
+.inputtext i:hover {
+  cursor: pointer;
+}
+.inputtext .lable {
+  font-weight: bold;
+  text-align: right;
+  width: 75px;
+}
+.inputtext input {
+  width: 247px;
+  position: absolute;
+  margin-left: 17px;
+  left: 180px;
+  top: -6px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.button-group {
+  margin-left: 197px;
+}
+.button-group button {
+  font-size: 17px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-right: 15px;
+  background-color: #2471A3;
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+.button-group button:hover {
+  cursor: pointer;
+  background-color: #3184bb;
+}
+
+.calenda {
+  width: 0;
+}
+.calenda i {
+  color: #2E86C1;
+  position: absolute;
+  font-size: 24px;
+  top: 0;
+  left: 427px;
+}
+.calenda i:hover {
+  cursor: pointer;
+  color: #257ab3;
+}
+.calenda input {
+  margin-top: 4px;
+  margin-left: 17px;
+  width: 247px;
+  height: 15px;
+}
+.calenda__content {
+  width: 450px;
+  padding: 2px;
+  position: relative;
+  top: 30px;
+  left: 16px;
+  margin-bottom: 10px;
+  background-color: #2D2D2D;
+  display: none;
+}
+.calenda__content__func {
+  display: flex;
+}
+.calenda__content__func--blue {
+  width: 62px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin: 1px;
+  color: #2E86C1;
+  background-color: #A9CCE3;
+  border: 1px solid #909497;
+  box-sizing: border-box;
+  transition: 0.4s;
+}
+.calenda__content__func--blue:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #257ab3;
+}
+.calenda__content__func__select-month {
+  margin: 1px;
+}
+.calenda__content__func__select-month select {
+  width: 127px;
+  height: 30px;
+}
+.calenda__content__func__select-year {
+  margin: 1px;
+}
+.calenda__content__func__select-year select {
+  width: 61px;
+  height: 30px;
+}
+.calenda__content__date {
+  display: flex;
+}
+.calenda__content__date div {
+  width: 62px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: red;
+  font-size: 25px;
+  font-weight: 600;
+  background-color: #BEBEBE;
+  border: 1px solid white;
+  box-sizing: border-box;
+  margin: 1px;
+}
+.calenda__content__day {
+  display: flex;
+  flex-wrap: wrap;
+}
+.calenda__content__day__item {
+  box-sizing: border-box;
+  width: 62px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: white;
+  margin: 1px;
+  border: 1px solid white;
+  transition: 0.4s;
+}
+.calenda__content__day__item--empty {
+  box-sizing: border-box;
+  width: 62px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin: 1px;
+  border: 1px solid white;
+  background-color: #2D2D2D;
+}
+.calenda__content__day__item--active {
+  background-color: #00ACE6;
+}
+.calenda__content__day__item:hover {
+  cursor: pointer;
+  background-color: #00ACE6;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Calenda</title>
+</head>
+<body>
+  <div class="container">
+    <form action="/sent-data" method="POST">
+      <div class="inputtext">
+        <div class="lable">Username:</div>
+        <input type="text" name="username">
+        <span name="alert-username"></span>
+      </div>
+      <div class="inputtext">
+        <div class="lable">Password:</div>
+        <input type="password" name="password">
+        <i id="toggle-password" class="fas fa-eye" onClick="onClick_toggle_password();"></i>
+        <span name="alert-password"></span>
+      </div>
+      <div class="inputtext">
+        <div class="lable">Email:</div>
+        <input type="email" name="email">
+        <span name="alert-email"></span>
+      </div>
+      <div class="inputtext">
+        <div class="lable">Birthday:</div>
+        <div class="calenda">
+          <input id="currentDate" type="text" name="birthday">
+          <span name="alert-birthday"></span>
+          <i class="fas fa-calendar-day" onClick="onClick_display_calenda();"></i>
+          <div class="calenda__content" id="calenda">
+            <div class="calenda__content__func">
+              <div class="calenda__content__func__preyear calenda__content__func--blue" onClick="onClick_preYear();">&#x21C7;</div>
+              <div class="calenda__content__func__premonth calenda__content__func--blue" onClick="onClick_preMonth();">&#x2190;</div>
+              <div class="calenda__content__func__select-month">
+                <select id="month" onChange="onChange_selectMonth();">
+                  <option value="0">January</option>
+                  <option value="1">February</option>
+                  <option value="2">March</option>
+                  <option value="3">April</option>
+                  <option value="4">May</option>
+                  <option value="5">June</option>
+                  <option value="6">July</option>
+                  <option value="7">August</option>
+                  <option value="8">September</option>
+                  <option value="9">October</option>
+                  <option value="10">November</option>
+                  <option value="11">December</option>
+                </select>
+              </div>
+              <div class="calenda__content__func__select-year" onChange="onChange_selectYear();">
+                <select id="year">
+                </select>
+              </div>
+              <div class="calenda__func__nextmonth calenda__content__func--blue" onClick="onClick_nextMonth();">&#x2192;</div>
+              <div class="calenda__func__nextyear calenda__content__func--blue" onClick="onClick_nextYear();">&#x21C9;</div>
+            </div>
+            <div class="calenda__content__date">
+              <div>Sun</div>
+              <div>Mon</div>
+              <div>Tue</div>
+              <div>Web</div>
+              <div>Thu</div>
+              <div>Fri</div>
+              <div>Sat</div>
+            </div>
+            <div class="calenda__content__day" id ="day">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="button-group">
+        <button id="submit" type="button" onClick="onClick_submit();">SUBMIT</button>
+        <button type="button" onClick="onClick_refresh();">REFRESH</button>
+      </div>
+    </form>
+  </div>
+  <script src="./js/index.js"></script> 
+</body>
+</html>
