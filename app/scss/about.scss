@@ -1,0 +1,107 @@
+.about {
+  padding: 48px 80px;
+  background-color: rgb(17 17 17);
+  border-radius: 50px;
+  margin-bottom: 32px !important;
+
+  h1 {
+    font-size: 40px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 40px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width:200px;
+      top: 50%;
+      right: -220px;
+      transform: translateY(-50%);
+      background-image: linear-gradient(to right, #FA5252, #DD2476);
+    }
+  }
+
+  .about-personal {
+    display: flex;
+
+    img {
+      border-radius: 25px;
+      margin-right: 32px;
+    }
+
+    .personal-content {
+      h2 {
+        font-size: 25px;
+      }
+
+      p {
+        font-size: 16px;
+        color: #a6a6a6;
+      }
+
+      .personal-info {
+        display: flex;
+        flex-wrap: wrap;
+
+        .info-item {
+          display: flex;
+          align-items: center;
+          width: 50%;
+          margin-bottom: 32px;
+
+          .icon {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            font-size: 20px;
+            margin-right: 16px;
+            background-color: rgb(33 36 37);
+          }
+
+          p {
+            margin-top: 0;
+            margin-bottom: 5px;
+            font-size: 14px;
+          }
+
+          h3 {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .about-ido {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .ido-item{
+      display: flex;
+      padding: 30px;
+      border: 2px solid rgb(33 36 37);
+      border-radius: 10px;
+      width: 320px;
+      height: 165px;
+      box-sizing: border-box;
+      margin-bottom: 32px;
+      i {
+        font-size: 30px;
+        margin-right: 16px;
+      }
+      h2 {
+        margin-top: 0;
+        font-size: 22px;
+      }
+      p{
+        margin-bottom: 0;
+        font-size: 16px;
+        text-align: justify;
+      }
+    }
+  }
+}

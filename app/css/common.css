@@ -1,0 +1,65 @@
+body {
+  background-image: url("../images/bg-dark.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  color: white;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 0;
+}
+.header .header-navbar {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header-navbar a {
+  color: rgb(166, 166, 166);
+  text-decoration: none;
+}
+.header .header-navbar a:last-child .navbar-item {
+  margin-right: 0;
+}
+.header .header-navbar .navbar-item {
+  padding: 12px 18px;
+  min-width: 80px;
+  text-align: center;
+  border-radius: 10px;
+  color: rgb(166, 166, 166);
+  background-color: rgb(33, 36, 37);
+  margin-right: 16px;
+}
+.header .header-navbar .navbar-item i {
+  margin-right: 10px;
+}
+
+.hover {
+  cursor: pointer;
+  transition: 0.4s;
+}
+.hover:hover {
+  color: white !important;
+  background-image: linear-gradient(to right, #FA5252, #DD2476);
+  transform: scale(1.1);
+}
+
+.active {
+  color: white !important;
+  background-image: linear-gradient(to right, #FA5252, #DD2476);
+}
+
+.copyright {
+  color: rgb(166, 166, 166);
+  text-align: center;
+  font-size: 14px;
+}
